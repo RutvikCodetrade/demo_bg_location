@@ -5,6 +5,11 @@
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
    <application
         android:label="demo_bg_location"
         android:name="${applicationName}"
@@ -35,5 +40,6 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+       <service android:name="com.pravera.flutter_foreground_task.service.ForegroundService" />
     </application>
 </manifest>
